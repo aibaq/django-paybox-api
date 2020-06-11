@@ -1,6 +1,8 @@
-from django.conf.urls import url
-from django.contrib import admin
+from rest_framework.routers import DefaultRouter
 
-urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-]
+from app.payments import views
+
+
+router = DefaultRouter()
+router.register('paybox', views.PayboxViewSet, basename='paybox')
+urlpatterns = router.urls
