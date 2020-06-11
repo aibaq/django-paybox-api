@@ -1,7 +1,7 @@
 # Installation
 
 ```
-pip install git+ssh://git@github.com/aibaq/django-paybox-api.git@0.0.1
+pip install git+ssh://git@github.com/aibaq/django-paybox-api.git@0.0.2
 ```
 
 # Settings
@@ -26,7 +26,7 @@ PG_FAILURE_URL = 'http://yourdomain/payments/paybox/failure/'
 # Usage
 
 ```
-from app.payments.paybox import PayboxAPI
+from paybox_api import PayboxAPI
 
 PayboxAPI().get_url(
     order_id=1,

@@ -5,7 +5,7 @@ from setuptools import (
 
 setup(
     name='django-paybox-api',
-    version='0.0.1',
+    version='0.0.2',
     author='Aiba',
     description='Django paybox api',
     url='https://github.com/aibaq/django-paybox-api',
